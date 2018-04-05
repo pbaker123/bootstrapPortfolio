@@ -1,0 +1,81 @@
+.btn-nav {
+	color: #aaa;
+	background-color: #fff;
+	border-left: 1px solid #5ba;
+}
+
+.btn-nav:hover {
+	color: #fff;
+	background-color:#444;
+}
+
+.btn-nav:focus, .btn-nav.focus {
+  	color: #fff;
+	background-color:#444;
+	box-shadow: 0 0 0 0rem #5ba;
+}
+
+.btn-nav.disabled, .btn-nav:disabled {
+  	color: #fff;
+  	background-color: #5ba;
+}
+
+.btn-nav:not(:disabled):not(.disabled):active, .btn-nav:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  	color: #fff;
+  	background-color: #444;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  	box-shadow: 0 0 0 0.2rem #5ba;
+}
+
+.current-page {
+	color: #fff !important;
+	background-color: #5ba !important;
+	text-decoration: none !important;
+}
+
+.gitHubSmallLink {
+	height: 40px;
+	width: 40px;
+	background-image: url('../images/github.png');
+	background-size: 40px;
+	border-radius: 5px;
+	margin: 6px;
+}
+
+.gitHubSmallLink:hover, .gitHubSmallLink:active, .gitHubSmallLink:focus {
+	background-image: url('../images/github2.png');
+}
+
+.linkedinSmallLink {
+	height: 40px;
+	width: 40px;
+	background-image: url('../images/linkedin.png');
+	background-size: 40px;
+	border-radius: 5px;
+	margin: 6px;
+}
+
+.linkedinSmallLink:hover, .linkedinSmallLink:active, .linkedinSmallLink:focus {
+	background-image: url('../images/linkedin2.png');
+}
+
+.stackSmallLink {
+	height: 40px;
+	width: 40px;
+	background-image: url('../images/stackoverflow.png');
+	background-size: 40px;
+	border-radius: 5px;
+	margin: 6px;
+}
+
+.stackSmallLink:hover, .stackSmallLink:active, .stackSmallLink:focus {
+	background-image: url('../images/stackoverflow2.png');
+}
+
+.border-bottom {
+	border-bottom: 3px solid #CCCCCC !important;
+}
