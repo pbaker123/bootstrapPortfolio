@@ -1,3 +1,16 @@
+body {
+	background-image: url("../images/darkWood.png");
+	background-repeat: repeat;
+}
+
+.bg-dimgray {
+	background-color: #666;
+}
+
+.text-cadetblue {
+	color: #5ba;
+}
+
 .btn-nav {
 	color: #aaa;
 	background-color: #fff;
@@ -78,4 +91,20 @@
 
 .border-bottom {
 	border-bottom: 3px solid #CCCCCC !important;
+}
+
+.border-top {
+	border-top: 4px solid #5ba !important;
+}
+
+
+
+.footerLogo {
+	position: relative;
+	margin: auto;
+	top: 5px;
+	height: 20px;
+	width: 140px;
+	background-image: url('../images/pbd.png');
+	background-size: 140px 20px;
 }
