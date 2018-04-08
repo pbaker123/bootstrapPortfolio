@@ -1,27 +1,31 @@
 html { 
 	width: 100vw;
-    overflow-x: hidden; 
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-
+    overflow-x: hidden;
+    position: relative;
+  	min-height: 100%;
 }
 
 body {
 	background-image: url("../images/darkWood.png");
 	background-repeat: repeat;
+	  /* Margin bottom by footer height */
+  	margin-bottom: 60px;
 }
 
-.wrapper {
-  min-height: 100%;
-  margin-bottom: -40px;
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 56px;
+  /*line-height: 60px;  Vertically center the text there */
+  background-color: #666;
+  border-top: 4px solid #5ba;
 }
 
-.footer,
-.push {
-  height: 40px;
+h1, h3, h5 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
 }
 
 .bg-dimgray {
@@ -37,16 +41,15 @@ body {
 }
 
 .border-bottom {
-	border-bottom: 3px solid #CCCCCC !important;
+	border-bottom: 2px solid #CCCCCC !important;
 }
 
-.border-top {
-	border-top: 4px solid #5ba !important;
+.border-md-bottom {
+	border: 2px #5ba solid;
 }
 
 .border-content {
 	border-bottom: 1px solid #DDDDDD !important;
-
 }
 
 .btn-nav {
@@ -165,4 +168,31 @@ body {
 
 .stackLink:hover, .stackLink:active, .stackLink:focus {
 	background-image: url('../images/stackoverflow2.png');
+}
+
+.mt-6 {
+	margin-top: 4rem !important;
+}
+
+.bumpfix{
+	width: 100vw;
+}
+
+@media (min-width: 768px) { 
+
+/*.current-page-inverse {
+	color: #fff !important;
+	background-color: #5ba !important;
+	text-decoration: none !important;
+	border-style: none;
+	
+}*/
+
+.border-bottom {
+	border-bottom: 3px solid #CCCCCC !important;
+}
+
+.mt-6 {
+	margin-top: 0.25rem !important;
+}
 }

@@ -4,6 +4,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta 
+	    	content="#4AAAA5"
+	    	name="msapplication-TileColor" 
+	    	>
+	    <meta 
+	    	content="#ffffff"
+	    	name="theme-color" 
+	    	>
 		<title>
 			Bootstrap Version
 		</title>
@@ -33,21 +41,17 @@
 	    	href="/safari-pinned-tab.svg" 
 	    	rel="mask-icon" 
 	    	>
-	    <meta 
-	    	content="#4AAAA5"
-	    	name="msapplication-TileColor" 
-	    	>
-	    <meta 
-	    	content="#ffffff"
-	    	name="theme-color" 
-	    	>
-		<link 
+	    <link 
 			crossorigin="anonymous"
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
 			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
 			rel="stylesheet" 
 			>
-
+		<link 
+			href="assets/css/custom.css"
+			rel="stylesheet" 
+			>
+		
 		<script 
 			crossorigin="anonymous"
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
@@ -66,226 +70,301 @@
 			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
 			>
 		</script>
-		<link 
-			href="assets/css/custom.css"
-			rel="stylesheet" 
-			>
-		
 	</head>
+
 	<body>
-		<div class="content">
-			<header>
-				<!-- Top Navigation -->
-				<div class="container-fluid border-bottom bg-white">
-					<!-- Full Width Container -->
-					<div class="container">
-						<!-- Normal Size Container -->
-						<div class="row align-items-center ">
-							<!-- First Column -->
-							<a 
-					  			class="col-sm-4 current-page h-100 text-center pt-2 pb-2 rounded"
-					  			href="https://pbaker123.github.io" 
-					  			>
-					  			<h1>
-					  				Paul Baker
-					  			</h1>
-					  		</a>
-							
-							<div class="col-sm-8 mt-3 mb-3">
-								<!-- Second Column -->
-								<div 
-									class="btn-group float-right" 
-									role="group"
-									>
-						  			<a 
-						  				class="btn btn-nav btn-lg border-0"
-						  				href="index.html" 
-						  				>
-						  					About
-						  			</a>
-						  			<a 
-						  				class="btn btn-nav btn-lg"
-						  				href="portfolio.html" 
-						  				>
-						  					Portfolio
-					  				</a>
-						  			
-						  			<div class="btn-group">
-						  				<a 
-						  					class="btn btn-nav btn-lg pr-1  current-page"
-						  					href="contact.html" 
-						  					>
-						  						Contact
-					  					</a>
-					  					<!-- Split Button with Drop Down -->
-						  				<button 
-						  					class="btn btn-nav btn-lg dropdown-toggle dropdown-toggle-split border-0 pl-1  current-page" 
-					  						data-toggle="dropdown"
-					  						type="button" 
-					  						>
-						  				</button>
-						  				<!-- Drop Down -->
-					  					<div class="dropdown-menu dropdown-menu-right">
-					  						<h5 class="dropdown-header text-cadetblue">
-					  							Connect with me!
-					  						</h5>
-					  						<div class="dropdown-divider">
-					  						</div>
-					    					<ul class="nav">
-					  							<li class="nav-item">
-					    							<a 
-														href="https://github.com/pbaker123/basicPortfolio"
-														target="_blank" 
-														title="Github Repository" 
-														>
-														<div class="gitHubSmallLink">
-														</div>
-													</a>
-					  							</li>
-					  							<li class="nav-item">
-					    							<a 
-														href="https://www.linkedin.com/in/paul-baker-03202b31/"
-														target="_blank" 
-														title="LinkedIn Profile" 
-														>
-														<div class="linkedinSmallLink">
-														</div>
-													</a>
-					  							</li>
-					  							<li class="nav-item">
-					    							<a 
-														href="https://stackoverflow.com/users/9519126/paul-baker"
-														target="_blank" 
-														title="StackOverFlow" 
-														>
-														<div class="stackSmallLink">
-														</div>
-													</a>
-					  							</li>
-					  						</ul>
-					  					</div>
+	
+		<!-- Navigation Bar -->
+		<header>
+			<div class="text-center p-1 text-md-left float-md-right bg-dimgray fixed-top d-md-none m-sm-0 bumpfix"> 
+				<!-- xs-md Navigation Panel: Hides at md size -->
+				<div 
+					class="btn-group my-md-4" 
+					role="group"
+					>
+		  			<a 
+		  				class="btn btn-nav btn-lg border-0"
+		  				href="index.html" 
+		  				>
+		  					About
+		  			</a>
+		  			<a 
+		  				class="btn btn-nav btn-lg"
+		  				href="portfolio.html" 
+		  				>
+		  					Portfolio
+	  				</a>
+		  			
+		  			<div class="btn-group">
+		  				<!-- Split Button with Drop Down -->
+		  				<a 
+		  					class="btn btn-nav btn-lg pr-1 current-page"
+		  					href="contact.html" 
+		  					>
+		  						<!-- Main Button -->
+		  						Contact
+	  					</a>
+	  					
+		  				<button 
+		  					class="btn btn-nav btn-lg dropdown-toggle dropdown-toggle-split border-0 pl-1 current-page" 
+	  						data-toggle="dropdown"
+	  						type="button" 
+	  						>
+	  							<!-- Drop down button -->
+		  				</button>
+		  				<div class="dropdown-menu dropdown-menu-right">
+	  						<!-- Drop down content -->
+	  						<h5 class="dropdown-header text-cadetblue">
+	  							Connect with me!
+	  						</h5>
+	  						<div class="dropdown-divider">
+	  						</div>
+	  						<div class="row block">
+								<!-- Social media row - Subrow 2 -->
+								<div class="col-sm-12 d-block">
+									<div class="text-center">
+										<!-- First social media link -->
+										<a 
+											class="d-inline-block mx-1"
+											href="https://github.com/pbaker123"
+											target="_blank" 
+											>
+											<div class="gitHubSmallLink">
+											</div>
+										</a>
+								
+										<!-- Second social media link -->
+										<a
+											class="d-inline-block mx-1" 
+											href="https://www.linkedin.com/in/paul-baker-03202b31/" 
+											target="_blank"
+											>
+											<div class="linkedinSmallLink">
+											</div>
+										</a>
+								
+										<!-- Third social media link -->
+										<a 
+											class="d-inline-block mx-1"
+											href="https://stackoverflow.com/users/9519126/paul-baker" 
+											target="_blank"
+											>
+												<div class="stackSmallLink">
+												</div>
+										</a>
 									</div>
 								</div>
 							</div>
-						</div>	
+	  					</div>
 					</div>
 				</div>
-			</header>
-		</div>
-	
-		<div class="container p-4">
-			<!-- Normal Size Container -->
-			<div class="row justify-content-center">
-				<div class="col-sm-7 bg-white rounded float-left text-dimgray pt-4 px-3 mt-3 mb-1 clearfix">
-					<!-- Start Main Content Area -->
-					<h3 class="text-cadetblue border-content pb-3">
-						Contact Me
-					</h3>
-					<form class="form-control-lg">
-				  		<div class="form-group">
-				    		<label for="nameInput">
-				    			Name
-				    		</label>
-				    		<input 
-				    			class="form-control" 
-				    			id="nameInput" 
-				    			placeholder="John Smith"
-				    			type="text" 
-				    			>
-				    	</div>
-				  		<div class="form-group">
-				    		<label for="emailInput">
-				    			Email address
-				    		</label>
-				    		<input 
-				    		type="email" 
-				    		class="form-control" 
-				    		id="emailInput" 
-				    		placeholder="jsmith@email.com"
-				    		>
-				    	</div>
-				  		<div class="form-group">
-						    <label for="textAreaInput">Message</label>
-						    <textarea 
-						    	class="form-control" 
-						    	id="textAreaInput" 
-						    	rows="4"
-						    	>
-						    </textarea>
-  						</div>
-				  		
-				  		<button 
-				  			class="btn current-page mb-2 px-5 h2 w-100"
-				  			type="submit" 
-				  			>
-				  			<h5>
-				  				Send
-				  			</h5>
-				  		</button>
-					</form>
-					<!-- End Main Content Area -->
-				</div>
-				
-				<div class="col-sm-4 bg-dimgray mt-3 h-100 d-block bg-white rounded ml-auto mb-1 px-2 pt-4 pb-2">
-					<!-- Connect With Me Area -->
-					<h5 class="text-cadetblue border-content pb-2 mb-3">
-						Connect with me
-					</h5>
-					
-					<div class="text-center">
-						<a 
-							class="d-inline-block mx-2"
-							href="#" 
-							>
-							<div class="media gitHubLink">
+			</div>
+
+			<div class="fluid-container">
+				<!-- Full width container so background and border extend full width of the screen -->
+				<div class="row">
+					<!-- Full screen row -->
+					<div class="col-sm-12">
+						<!-- Full screen column to set background color and border -->
+						<div class="bg-white border-bottom">
+							<div class="container">
+								<!-- Standard container to keep content properly aligned -->
+								<div class="row">
+									<!-- Subrow for nav bar information -->
+									<div class="col-md-5">
+										<!-- Name Plate -->
+										<a 
+											class="current-page"
+											href="https://pbaker123.github.io/"
+											target="_blank"
+											>
+											<div class="current-page p-3 pt-3 mb-1 mt-6 mr-2 text-center">
+												<h1 class="m-0">
+													Paul Baker 
+												</h1>
+												<!-- Make a media so this changes to smaller font rather than going to 2nd line -->
+											</div>
+										</a>
+									</div>
+									<div class="col-md-4">
+										<div class="d-none d-md-inline">
+										<!-- This area intentionally left blank -->
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="text-center text-md-left float-md-right bg-white d-none d-md-inline">  
+											<!-- md+ Navigation panel -->
+											<div 
+												class="btn-group my-sm-1 my-md-3" 
+												role="group"
+												>
+									  			<a 
+									  				class="btn btn-nav btn-lg border-0"
+									  				href="index.html" 
+									  				>
+									  					About
+									  			</a>
+									  			<a 
+									  				class="btn btn-nav btn-lg"
+									  				href="portfolio.html" 
+									  				>
+									  					Portfolio
+								  				</a>
+									  			
+									  			<a 
+									  				class="btn btn-nav btn-lg current-page"
+									  				href="contact.html" 
+									  				>
+									  					Contact
+								  				</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-						</a>							
-						<a 
-							class="d-inline-block mx-2"
-							href="#" 
-							>
-							<div class="linkedinLink">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Main Content -->
+		<main>
+			<div class="container">
+				<div class="p-0">
+					<div class="row">
+						<!-- Main content row - Row 1 -->
+						<div class="col-md-7">
+							<!-- Main content column -->
+							<div class="bg-white rounded pt-4 px-3 pb-2 mt-3 mb-1 mx-1 clearfix">
+								<h3 class="text-cadetblue border-content pb-3">
+									Contact Me
+								</h3>
+								<form class="form-control-lg">
+							  		<div class="form-group">
+							    		<label for="nameInput">
+							    			Name
+							    		</label>
+							    		<input 
+							    			class="form-control" 
+							    			id="nameInput" 
+							    			placeholder="John Smith"
+							    			type="text" 
+							    			>
+							    	</div>
+							  		<div class="form-group">
+							    		<label for="emailInput">
+							    			Email address
+							    		</label>
+							    		<input 
+							    		class="form-control" 
+							    		id="emailInput" 
+							    		placeholder="jsmith@email.com"
+							    		type="email" 
+							    		>
+							    	</div>
+							  		<div class="form-group">
+									    <label for="textAreaInput">Message</label>
+									    <textarea 
+									    	class="form-control" 
+									    	id="textAreaInput" 
+									    	rows="4"
+									    	>
+									    </textarea>
+			  						</div>
+							  		
+							  		<button 
+							  			class="btn current-page mb-2 px-5 h2 w-100"
+							  			type="submit" 
+							  			>
+							  			<h5>
+							  				Send
+							  			</h5>
+							  		</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="col-md-1">
+							<!-- Intentionally left blank -->
+						</div>
+						<div class="col-md-4">
+							<!-- Connect with me panel -->
+							<div class="bg-white mt-3 mx-1 rounded mb-1 px-2 pt-4 pb-2 d-none d-md-block">
+								<div class="row">
+									<!-- Title sub row - Subrow 1 -->
+									<div class="col-sm-12">
+										<!-- Connect with me title -->
+										<h5 class="text-cadetblue border-content pb-2 mb-3">
+											Connect with me
+										</h5>
+										
+									</div>
+								</div>
+								<div class="row block">
+									<!-- Social media row - Subrow 2 -->
+									<div class="col-sm-12 d-block">
+										<div class="text-center">
+											<!-- First social media link -->
+											<a 
+												class="d-inline-block mx-1"
+												href="https://github.com/pbaker123" 
+												target="_blank"
+												>
+												<div class="gitHubLink">
+												</div>
+											</a>
+									
+											<!-- Second social media link -->
+											<a
+												class="d-inline-block mx-1" 
+												href="https://www.linkedin.com/in/paul-baker-03202b31/"
+												target="_blank" 
+												>
+												<div class="linkedinLink">
+												</div>
+											</a>
+									
+											<!-- Third social media link -->
+											<a 
+												class="d-inline-block mx-1"
+												href="https://stackoverflow.com/users/9519126/paul-baker" 
+												target="_blank"
+												>
+													<div class="stackLink">
+													</div>
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
 							
-						</a>
-				
-						<a 
-							class="d-inline-block mx-2"
-							href="#" 
-							>
-							<div class="stackLink">
-							</div>
-						</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="push">
-			<!-- Makes sure we can see the bottom of the page when scrolling -->
-		</div>
+		</main>
+		
+		<!-- Sticky Footer -->
+		<footer>
+      		<div class="container">
+        		<div class="row">
+        			<div class="col-sm-12">
+        				<div class="text-center">
+        					<img src="assets/images/pbd-sm.png">
+        				</div>
+        			</div>
+        			<div class="col-sm-12">
+        				<div class="text-center text-white">
+        					<small>
+        						Copyright &copy; 2018
+        					</small>
+        				</div>
+        			</div>
+        		</div>
+      		</div>
+    	</footer>
 
-		<footer class="footer">
-			<!-- Footer Area -->
-			<div 
-				class="container-fluid border-top bg-dimgray fixed-bottom" 
-				>
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-sm-12 text-center">
-							<img src="assets/images/pbd-sm.png">
-						</div>
-					</div>
-					<div class="row justify-content-center">
-						<div class="col-sm-12 text-white text-center">
-							<small>
-								Copyright &copy; 2018
-							</small>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
 	</body>
 </html>
-
 
