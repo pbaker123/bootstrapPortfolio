@@ -10,6 +10,8 @@ body {
 	background-repeat: repeat;
 	  /* Margin bottom by footer height */
   	margin-bottom: 60px;
+  	/* Padding is to make safe space for iPhones */
+  	padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
 footer {
